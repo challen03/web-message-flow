@@ -1,0 +1,14 @@
+.app {
+  background: #fff;
+  padding: 20px;
+
+  :global {
+    .ant-list-item {
+      align-items: flex-start;
+    }
+  }
+
+  .messageFlowWrap {
+    flex: 1 1 0;
+  }
+}

@@ -1,0 +1,20 @@
+.messageWrap {
+  display: block;
+  padding: 30px;
+
+  &.systemMessageWrap {
+    padding: 5px;
+  }
+
+  .textMessage {
+      font-size: 15px;
+  }
+
+  .systemMessage {
+    padding: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
