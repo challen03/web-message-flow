@@ -10,6 +10,12 @@
 
 **重点考察组件设计和扩展性，比如：新增一个消息类型不会改动现有的代码等**
 
+## 概览
+
+![大致效果](./public/overview.png)
+
+> 有三种类型，TEXT, IMAGE, SYSTEM_INFO 和 扩展的OTHER, 可通过外部传入render react component实现扩展
+
 ## 开发和部署
 
 通过```npm run start```启动服务
