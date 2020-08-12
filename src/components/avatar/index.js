@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 import s from './style.module.scss';
 
 class Avatar extends PureComponent {
@@ -13,6 +14,11 @@ class Avatar extends PureComponent {
       </div>
     )
   }
+}
+
+Avatar.propTypes = {
+  avatarUrl: PropTypes.string,
+  name: PropTypes.node,
 }
 
 Avatar.defaultProps = {

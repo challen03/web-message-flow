@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
 import MessageFlow from './components/message-flow';
-import Avatar from './components/avatar';
 import { MESSAGE_TYPE_ENUMS } from './constant';
 import { List, Skeleton, Button } from 'antd';
 import s from './app.module.scss';
@@ -65,9 +64,7 @@ class App extends PureComponent {
 
   renderMessageFlows = ({ id, type, ...other }) => {
     return (
-      <div className={s.messageFlowWrap}>
-        <MessageFlow key={id} type={type} {...other} />
-      </div>
+      <MessageFlow key={id} type={type} {...other} />
     )
   }
 
@@ -106,7 +103,6 @@ class App extends PureComponent {
               actions={this.getActionEle(item)}
             >
               <Skeleton avatar title={false} loading={item.loading} active>
-                {item.type !== MESSAGE_TYPE_ENUMS.SYSTEM_INFO.value ? <Avatar name={item.name} /> : null}
                 {
                   this.renderMessageFlows(item)
                 }

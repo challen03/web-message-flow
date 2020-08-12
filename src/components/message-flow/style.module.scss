@@ -1,13 +1,18 @@
 .messageWrap {
-  display: block;
-  padding: 30px;
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
 
-  &.systemMessageWrap {
-    padding: 5px;
+  .messageContent {
+    padding: 30px;
+    flex: 1;
+    &.systemMessageContent {
+      padding: 5px;
+    }
   }
 
   .textMessage {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   .systemMessage {
